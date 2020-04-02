@@ -1,8 +1,8 @@
 var hello = 'Hello';
-var hello = 'Hello + world';
+var hello = 'Hello + world'; // Si se puede volver a asignar con const
 let world = 'Hello world'
+let world = 'Hi' // No se puede volver a asignar con let
 const helloWorld = 'Hello World!'
-console.log(hello);
 
 const anotherFunction = () => {
     console.log(hello);
@@ -11,3 +11,9 @@ const anotherFunction = () => {
 };
 
 anotherFunction();
+
+const helloWorld1 = () => {
+    globalVar = 'Im global'
+}
+
+helloWorld1()
